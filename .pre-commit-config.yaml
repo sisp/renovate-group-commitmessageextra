@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: renovate-config-validator
+        name: renovate-config-validator
+        entry: renovate-config-validator --strict
+        language: node
+        additional_dependencies: [renovate@37.200.0]
+        files: (^|/).?renovate(?:rc)?(?:\.json5?)?$

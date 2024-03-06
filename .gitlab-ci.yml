@@ -1,0 +1,5 @@
+# Minimal and non-working snippet
+renovate:
+  image: renovate/renovate:37.200.0
+  script:
+    - renovate
